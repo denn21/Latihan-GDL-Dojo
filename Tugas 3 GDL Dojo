@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class MenuSaja : MonoBehaviour
+{
+    string[] namaAnggota = {"Denn", "Niss", "Fahri"};
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        for (int i = 0; i < namaAnggota.Length; i++)
+        {
+            Debug.Log($"Nama Anggota :" + namaAnggota[i]);
+        }
+
+        for (int j = -1; j < 10; j++)
+        {
+            Debug.Log(j);
+        }       
+    }
+
+        public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+}
